@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+        
+            var tipo_comb = prompt('digite o tipo de combustível: \nA - ALCOOL\nG - GASOLINA')
+
+            while(tipo_comb != 'A' && tipo_comb != 'a' && tipo_comb != 'G' && tipo_comb != 'g'){
+                alert('Valor inválido')
+                var tipo_valido = prompt('Digite um valor válido')
+            }
+
+            if (tipo_comb == 'A' || tipo_comb=='a'){
+                var litros_a = prompt('quantos litros?')
+                if(litros_a <= 20){
+                    alert(litros_a*2.813)
+                }
+                else if(litros_a >= 20){
+                    alert(litros_a*2.755)
+                }
+            }
+            else if(tipo_comb == 'G' || tipo_comb == 'g'){
+                var litros_g = prompt('quantos litros? ')
+                if(litros_g <= 20){
+                    alert(litros_g*3.168)
+                }
+                else if(litros_g >= 20){
+                    alert(litros_g*3.102)}
+                }
+            
+        </script>
+    </body>
+</html>
