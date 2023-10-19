@@ -22,9 +22,9 @@ nav .logo a{
 
 nav ul{
     display: flex;
-    align-items: center;
     list-style: none;
-    padding: 10px;
+    padding: 1px;
+    justify-content: end;
 }
 
 nav li{
@@ -37,7 +37,7 @@ nav li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    padding: 8PX 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     transition: 0.3s;
 
@@ -63,7 +63,7 @@ nav li a:hover{
 
 .texto .titulo{
     color: #fff;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 600;
 }
 .texto .sub_titulo{
@@ -117,4 +117,7 @@ nav li a:hover{
     100%{
         transform:scale(1) ;
     }
+}
+.nav-bar{
+    text-align: start;
 }
