@@ -7,7 +7,7 @@ font-family: 'Poppins', sans-serif;
 
 nav{
     background-color: #18929D;
-    padding: 10px 60px;
+    padding: 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ nav li a:hover{
 }
 
 .banner{
-    height: 100vh;
+    height: 93.2vh;
     background:linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)),url('IMG/Fundo/backgroud.jpg');
     background-size: cover;
     background-position: center;
