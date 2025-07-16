@@ -1,0 +1,32 @@
+/* Header geral */
+.header {
+  background-color: #05400A; /* verde escuro */
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+/* Navegação */
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover */
+.nav-links a:hover {
+  color: #FAA61A; /* laranja para destaque */
+}

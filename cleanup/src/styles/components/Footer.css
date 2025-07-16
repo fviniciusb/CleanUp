@@ -1,0 +1,19 @@
+ footer {
+  background-color: #05400A; /* Verde escuro */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+a img{
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
