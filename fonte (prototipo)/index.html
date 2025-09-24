@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanUp - Servioços de limpeza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">CleanUp</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#" class="btn-login" onclick="openModal()">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transforme seu lar com limpeza profissional</h1>
+                <p>Conectamos você com diaristas qualificadas e verificadas. Serviços de limpeza residencial com garantia de qualidade e confiança.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openModal()">Cadastre-se Grátis</button>
+                    <a href="#sobre" class="btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <h3>Diarista a 5km de você</h3>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>4.9 (127 avaliações)</span>
+                    </div>
+                    <p>Maria Silva está disponível para limpeza completa da sua casa hoje.</p>
+                    <div style="background: var(--bg-light); padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                        <strong>R$ 120,00</strong> • 4 horas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="sobre">
+        <div class="features-container">
+            <div class="section-header">
+                <h2>Por que escolher o CleanUp?</h2>
+                <p>Oferecemos a melhor experiência em serviços de limpeza doméstica com profissionais qualificados</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Diaristas Verificadas</h3>
+                    <p>Todas nossas profissionais passam por verificação de antecedentes e treinamento de qualidade.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Agendamento Rápido</h3>
+                    <p>Agende seu serviço em poucos cliques. Disponibilidade imediata ou programada.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Garantia de Qualidade</h3>
+                    <p>Se não ficar satisfeito, refazemos o serviço gratuitamente ou devolvemos seu dinheiro.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Acompanhamento Online</h3>
+                    <p>Monitore o progresso do serviço e se comunique diretamente com a diarista pelo app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Pagamento Seguro</h3>
+                    <p>Pagamentos online protegidos. Sem dinheiro em espécie, sem preocupações.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Avaliações Reais</h3>
+                    <p>Sistema de avaliações transparente para você escolher sempre o melhor profissional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="servicos">
+        <div class="cta-container">
+            <h2>Pronto para ter sua casa impecável?</h2>
+            <p>Junte-se a mais de 10.000 famílias que já confiam no CleanUp para cuidar do seu lar</p>
+            <button class="btn-cta" onclick="openModal()">Começar Agora</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Suporte</a>
+                <a href="#">Central de Ajuda</a>
+            </div>
+            <p>&copy; 2025 CleanUp. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Cadastro -->
+    <div class="modal" id="cadastroModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h3>Cadastre-se no CleanUp</h3>
+            <form id="cadastroForm">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">
+                    <span id="btnText">Criar Conta Grátis</span>
+                    <span id="btnLoading" class="loading" style="display: none;"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        ✅ Cadastro realizado com sucesso! Bem-vindo ao CleanUp!
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

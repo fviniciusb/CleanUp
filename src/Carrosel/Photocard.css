@@ -1,0 +1,84 @@
+/* Arquivo: Carrosel/Photocard.css (CONTEÚDO CORRETO) */
+
+/* Define a largura máxima do carrossel */
+.carousel-wrapper {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+/* O card que está DENTRO de cada slide */
+.carousel-wrapper .hero-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  color: var(--text-dark);
+  margin: 0 10px; /* Adiciona respiro nas laterais para a sombra */
+  border-top: 2px solid var(--primary-color);
+  padding: 0; /* Remove padding extra do card principal */
+  transition: all 0.3s ease;
+}
+
+.hero-card h3 {
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0; 
+}
+
+.card-image,
+.professional-photo {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; /* Garante que a imagem não tenha cantos arredondados */
+}
+
+.card-content {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card-content .rating {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-content .rating .star,
+.card-content .rating .stars { /* Adicionado para compatibilidade */
+  color: #F59E0B;
+}
+
+.price, /* Adicionado para compatibilidade */
+.price-test {
+  background: var(--bg-light);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Ajusta os pontos de navegação do carrossel */
+.slick-dots {
+  bottom: -35px !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  opacity: 0.5;
+  font-size: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
