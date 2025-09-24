@@ -4,6 +4,7 @@ import './App.css';
 // 1. Corrigido o nome da importação para maior clareza
 import ProfessionalsCarousel from './components/Carrosel/ProfessionalsCarousel'; 
 import './components/Carrosel/Photocard.css';
+import RegistrationForm from './components/Formulário/RegistrationForm';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -33,7 +34,7 @@ function App() {
     {
       id: 3,
       name: 'João Pereira',
-      image: 'https://lh3.googleusercontent.com/rd-gg-dl/AJfQ9KS5SiKaFFRo1VhFTbzfGABEon_x8VwEajkI7B7G-CNtdAKSRUloj-lPgx6f0IiR7kjnlcW3iA_EdtMoXLdbxOPt_9PgZ_4E4xdDU8Cb_OzhhXrUYRzGoF11x9Uge7fv8VZS0dlfyHkNTnaLe9WBGzI8_siSoRDgqXdDyUyFrIyOKGjBqBw_yon0-kxhpKrIPAQFTYw6fWTAssKVOvylOenX-XhyVIlmFMxqGyVF76GOgp1uU94PaWVnwGYaVmgu8jrK7SduAqVmal9pJe2T2k-OOPcOcMloQnQzqxdD6ZNtVEogi3s94YazeGMPoiKbQsH9UY_AYsGww0am3qhJ8Kc5RCQim9fRjR98lYfdpmu7iBBdDBrpettLwz9yxih4uLcsRGpVlc74IKt57JbRPq-opk-ABedZHeaGXfS7cPNjezgqEAvk-GUkscMP70jHixCoCkKUsT9I0WIQB-HGQMkuT-OCaL13WiqkF5zUDoiIjP-MVsTwh4rcjT5QOBu789Ind1n0--702YIYZJwdxs5WT8zuS2xmI7txZAC3FXR5K2SWJB28IDzk8Er59biswEWFoDrMs6tpLuOk2n5iRmmAPSrHzv0H9lPZlmjeEoGQPFo8abRKpjC5gAUl0DK_BuirUP-rxs_-gR5oDOOPrufWeCCIJg2TPSsbxolIAejwCVBqpT90XbhM3W5hm8qel9SDBKvBCdRKCw5IdK6ufM8g_xqU7OM7cu4eBT8kv1OkQSf6UK4pkkNMuikqI6WU64t45kH47ho0jRDXpcHahrS4CV1Sr9SztSZyvSG_i-RfcScPbk1kzDDPXT0_6MBaBYbPb9GG3RSCukMj-s4hScm0jCiGp8UCDO7_sCHBOHqqyC9FlTjtSgHG4-iqxb7cyhNiNkX36vq3WwXkr8JNeBlKAqLWrM9eNA2-sGx6soTktv9IWy0t1qBimJPf72vFHCQ5wXno4u0YP9nd1ohDSb9WSlzUQl_VgYeT5iPq5vSFXFGA8esloipR8LV5gFQwadZ6Q82Cw0jB8KaCU7duQS_uKZgb0IyN8iUWIVky6rT75kfilQnQVtCOvZrNrd91g2RCknqbGvCF2NFWxpxPy1z-RQNq_Rd_Ck59A6JPnNkfZwVIXjCh4JIDdzHmOe3QqaHdaJWjD54H4v6y0F-TKDxugvbfcWn7iLBEqFJZppaojCKYSCLFiX4x=s1024',
+      image: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-4ac4-6230-814b-a739fce5ba8e/raw?se=2025-09-24T23%3A14%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=818c9bca-9c84-5f76-9b45-4d6523560eb8&skoid=ec8eb293-a61a-47e0-abd0-6051cc94b050&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-24T10%3A08%3A34Z&ske=2025-09-25T10%3A08%3A34Z&sks=b&skv=2024-08-04&sig=4SY7MvLTlnX0yc7VJa/V96wENkSr7ig1Ce3ysdz5UMU%3D',
       rating: 4.6,
       reviews: 107,
       description: 'está disponível para limpeza de casas grandes.',
@@ -85,9 +86,10 @@ function App() {
       {modalOpen && (
         <div className="modal">
           <div className="modal-content">
-            <span className="close" onClick={closeModal}>&times;</span>
+            <span style={{fontSize: '2.5rem', fontWeight: 'bold', color: 'white', cursor: 'pointer', position: 'absolute', right: '1rem'}} className="clos" onClick={closeModal}>&times;</span>
             <h2>Login / Cadastro</h2>
             {/* Conteúdo do modal aqui */}
+            <RegistrationForm closeModal={closeModal} />
           </div>
         </div>
       )}

@@ -57,56 +57,6 @@ header {
             margin: 0 auto;
         }
 
-        /* MODO DARK
-
-.dark-mode .hero-content h1 {
-    color: var(--primary-color) !important;
-    background: none !important;
-    -webkit-text-fill-color: unset !important;
-}
-.dark-mode .hero-content p {
-    color: #e2e8f0 !important;
-}
-
-.dark-mode .hero-card p {
-    color: #000000 !important;
-}
-
-.dark-mode .hero-card strong {
-    color: #000000 !important;
-}
-
-.dark-mode {
-    background: var(--bg-dark) !important;
-    color: var(--text-darkmode) !important;
-}
-
-.dark-mode .hero {
-    background: linear-gradient(135deg, rgba(24, 227, 178, 0.18) 0%, rgba(95, 255, 211, 0.12) 100%) !important;
-}
-
-.dark-mode .hero-card {
-    background: white;
-    color: black !important;
-}
-
-.dark-mode header {
-    background: #fdfdfd !important;
-    color: rgb(60, 45, 129) !important;
-}
-
-.dark-mode .btn-primary, .dark-mode .btn-login {
-    background: var(--primary-dark) !important;
-    color: #fff !important;
-}
-
-.dark-mode .modal
-
-.dark-mode .btn-secondary {
-    border-color: var(--primary-dark) !important;
-    color: var(--secondary-dark) !important;
-} */
-
         .logo {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -594,7 +544,7 @@ header {
             color: var(--text-dark);
         }
 
-        /* Responsive */
+        /* Responsividade */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -642,7 +592,6 @@ header {
             }
         }
 
-        /* Loading Animation */
         .loading {
             display: inline-block;
             width: 20px;
@@ -658,7 +607,6 @@ header {
             100% { transform: rotate(360deg); }
         }
 
-        /* Success Message */
         .success-message {
             position: fixed;
             top: 20px;
@@ -676,6 +624,52 @@ header {
         @keyframes slideInRight {
             from { transform: translateX(100%); }
             to { transform: translateX(0); }
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+            width: 100%;
+            animation: slideIn 0.3s ease;
+            max-width: 420px; /* Largura máxima reduzida */
+            padding: 2rem;    /* Espaçamento interno um pouco menor */
+            color: white;
+}
+
+        .modal-content h2 {
+            font-family: 'Playfair Display', 'serif';
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 0.2rem;
+            font-weight: 500;
+            color: white;
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 3px;
+            
         }
 
         
