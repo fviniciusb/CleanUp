@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './App.css'; 
 
 // 1. Corrigido o nome da importação para maior clareza
-import ProfessionalsCarousel from './Carrosel/ProfessionalsCarousel'; 
-import './Carrosel/Photocard.css';
+import ProfessionalsCarousel from './components/Carrosel/ProfessionalsCarousel'; 
+import './components/Carrosel/Photocard.css';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
